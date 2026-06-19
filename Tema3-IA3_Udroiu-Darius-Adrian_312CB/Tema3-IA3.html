@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suport Tehnic - NeuroLink Prism</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0d1117; /* Fundal foarte inchis */
+            color: #c9d1d9;
+            display: flex;
+            justify-content: center;
+            padding: 40px 20px;
+            margin: 0;
+        }
+        .container {
+            background-color: #161b22;
+            padding: 30px;
+            border-radius: 10px;
+            border: 1px solid #30363d;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            max-width: 550px;
+            width: 100%;
+        }
+        h2 { color: #58a6ff; text-align: center; margin-top: 0; }
+        .form-group { margin-bottom: 18px; }
+        label { display: block; margin-bottom: 8px; font-size: 0.9rem; }
+        input[type="text"], select, textarea {
+            width: 100%;
+            padding: 10px;
+            border-radius: 6px;
+            border: 1px solid #30363d;
+            background-color: #0d1117;
+            color: white;
+            box-sizing: border-box;
+        }
+        .btn-group { display: flex; gap: 10px; margin-top: 20px; }
+        button { flex: 1; padding: 12px; border-radius: 6px; border: none; cursor: pointer; font-weight: bold; }
+        .btn-send { background-color: #238636; color: white; }
+        .btn-reset { background-color: #da3633; color: white; }
+        .links-section {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #30363d;
+            text-align: center;
+        }
+        .links-section a {
+            color: #58a6ff;
+            text-decoration: none;
+            display: block;
+            margin: 10px 0;
+            font-size: 0.95rem;
+        }
+        .links-section a:hover { text-decoration: underline; }
+        img { border-radius: 8px; margin-bottom: 20px; border: 1px solid #30363d; display: block; margin-left: auto; margin-right: auto; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>NeuroLink Prism: Raportare Tehnică</h2>
+        
+        <!-- Element Obligatoriu: Imagine -->
+        <img src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?auto=format&fit=crop&q=80&w=400" alt="Senzori EEG si AR" width="350">
+
+        <form action="#" method="post">
+            <!-- Element Obligatoriu: Textbox -->
+            <div class="form-group">
+                <label for="user_id">ID Utilizator (din baza de date):</label>
+                <input type="text" id="user_id" name="user_id" placeholder="Ex: NL-2026-X" required>
+            </div>
+
+            <!-- Element Obligatoriu: Drop-down list -->
+            <div class="form-group">
+                <label for="issue_type">Tipul Erorii:</label>
+                <select id="issue_type" name="issue_type">
+                    <option value="eeg_noise">Zgomot excesiv (>1µV)</option>
+                    <option value="calib">Calibrare lentă (>30s)</option>
+                    <option value="ui">Latență interfață AR</option>
+                </select>
+            </div>
+
+            <!-- Element Obligatoriu: Radiobutton -->
+            <div class="form-group">
+                <label>Starea dispozitivului în timpul erorii:</label>
+                <input type="radio" id="stare1" name="status" value="on" checked> <label style="display:inline;" for="stare1">Pornit / Online</label><br>
+                <input type="radio" id="stare2" name="status" value="off"> <label style="display:inline;" for="stare2">Mod Standby</label>
+            </div>
+
+            <!-- Element Obligatoriu: Checkbox -->
+            <div class="form-group">
+                <label>Senzori afectați:</label>
+                <input type="checkbox" id="c3" name="s" value="C3"> <label style="display:inline;" for="c3">C3 (Central)</label>
+                <input type="checkbox" id="fp1" name="s" value="Fp1"> <label style="display:inline;" for="fp1">Fp1 (Frontal)</label>
+                <input type="checkbox" id="o1" name="s" value="O1"> <label style="display:inline;" for="o1">O1 (Occipital)</label>
+            </div>
+
+            <!-- Elemente Obligatorii: Butoane Send si Reset -->
+            <div class="btn-group">
+                <button type="submit" class="btn-send">Trimite Raport</button>
+                <button type="reset" class="btn-reset">Resetează Datele</button>
+            </div>
+        </form>
+
+        <!-- Element Obligatoriu: Linkuri (inclusiv link-ul OneDrive furnizat) -->
+        <div class="links-section">
+            <a href="https://1drv.ms/x/c/1339712e5c741224/IQDGmfnM1fjyToHhiuCIcPB3ASPc1UPD4yTOBAaAU1CgcCA?e=gb5CNM" target="_blank">📈 Accesează Analiza Excel (OneDrive)</a>
+            <a href="https://www.w3schools.com" target="_blank">📖 Documentație W3Schools</a>
+        </div>
+    </div>
+
+</body>
+</html>
