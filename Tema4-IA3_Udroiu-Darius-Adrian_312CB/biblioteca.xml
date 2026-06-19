@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE biblioteca SYSTEM "biblioteca.dtd">
+<biblioteca nume="Biblioteca Centrala Universitara" oras="Bucuresti">
+
+    <sectiune id="S001" categorie="Literatura">
+        <carte id="C001" disponibila="da">
+            <titlu>Ion</titlu>
+            <autor>
+                <prenume>Liviu</prenume>
+                <nume>Rebreanu</nume>
+                <nationalitate>romana</nationalitate>
+            </autor>
+            <publicatie>
+                <editura>Cartea Romaneasca</editura>
+                <an>1920</an>
+                <editie>1</editie>
+            </publicatie>
+            <detalii>
+                <gen>Roman</gen>
+                <pagini>412</pagini>
+                <limba>romana</limba>
+                <isbn>978-973-23-1234-5</isbn>
+            </detalii>
+            <imprumuturi>
+                <imprumut id="IMP001">
+                    <cititor>
+                        <prenume>Ana</prenume>
+                        <nume>Popescu</nume>
+                        <email>ana.popescu@email.ro</email>
+                    </cititor>
+                    <data_imprumut>2025-03-01</data_imprumut>
+                    <data_returnare>2025-03-15</data_returnare>
+                    <status>returnat</status>
+                </imprumut>
+            </imprumuturi>
+        </carte>
+
+        <carte id="C002" disponibila="nu">
+            <titlu>Enigma Otiliei</titlu>
+            <autor>
+                <prenume>George</prenume>
+                <nume>Calinescu</nume>
+                <nationalitate>romana</nationalitate>
+            </autor>
+            <publicatie>
+                <editura>Minerva</editura>
+                <an>1938</an>
+                <editie>3</editie>
+            </publicatie>
+            <detalii>
+                <gen>Roman</gen>
+                <pagini>380</pagini>
+                <limba>romana</limba>
+                <isbn>978-973-21-0567-2</isbn>
+            </detalii>
+            <imprumuturi>
+                <imprumut id="IMP002">
+                    <cititor>
+                        <prenume>Mihai</prenume>
+                        <nume>Ionescu</nume>
+                        <email>mihai.ionescu@email.ro</email>
+                    </cititor>
+                    <data_imprumut>2025-04-10</data_imprumut>
+                    <data_returnare>2025-04-24</data_returnare>
+                    <status>activ</status>
+                </imprumut>
+            </imprumuturi>
+        </carte>
+    </sectiune>
+
+    <sectiune id="S002" categorie="Stiinta">
+        <carte id="C003" disponibila="da">
+            <titlu>O scurta istorie a timpului</titlu>
+            <autor>
+                <prenume>Stephen</prenume>
+                <nume>Hawking</nume>
+                <nationalitate>britanica</nationalitate>
+            </autor>
+            <publicatie>
+                <editura>Humanitas</editura>
+                <an>1988</an>
+                <editie>2</editie>
+            </publicatie>
+            <detalii>
+                <gen>Stiinta populara</gen>
+                <pagini>212</pagini>
+                <limba>romana</limba>
+                <isbn>978-973-50-2341-8</isbn>
+            </detalii>
+            <imprumuturi/>
+        </carte>
+
+        <carte id="C004" disponibila="da">
+            <titlu>Structura revolutiilor stiintifice</titlu>
+            <autor>
+                <prenume>Thomas</prenume>
+                <nume>Kuhn</nume>
+                <nationalitate>americana</nationalitate>
+            </autor>
+            <publicatie>
+                <editura>Humanitas</editura>
+                <an>1962</an>
+                <editie>4</editie>
+            </publicatie>
+            <detalii>
+                <gen>Filosofia stiintei</gen>
+                <pagini>298</pagini>
+                <limba>romana</limba>
+                <isbn>978-973-50-0892-3</isbn>
+            </detalii>
+            <imprumuturi>
+                <imprumut id="IMP003">
+                    <cititor>
+                        <prenume>Elena</prenume>
+                        <nume>Dumitrescu</nume>
+                        <email>elena.d@email.ro</email>
+                    </cititor>
+                    <data_imprumut>2025-04-20</data_imprumut>
+                    <data_returnare>2025-05-04</data_returnare>
+                    <status>returnat</status>
+                </imprumut>
+            </imprumuturi>
+        </carte>
+    </sectiune>
+
+    <sectiune id="S003" categorie="Informatica">
+        <carte id="C005" disponibila="nu">
+            <titlu>Introduction to Algorithms</titlu>
+            <autor>
+                <prenume>Thomas</prenume>
+                <nume>Cormen</nume>
+                <nationalitate>americana</nationalitate>
+            </autor>
+            <publicatie>
+                <editura>MIT Press</editura>
+                <an>2009</an>
+                <editie>3</editie>
+            </publicatie>
+            <detalii>
+                <gen>Manual universitar</gen>
+                <pagini>1292</pagini>
+                <limba>engleza</limba>
+                <isbn>978-0-262-03384-8</isbn>
+            </detalii>
+            <imprumuturi>
+                <imprumut id="IMP004">
+                    <cititor>
+                        <prenume>Darius</prenume>
+                        <nume>Udroiu</nume>
+                        <email>darius.udroiu@stud.acs.ro</email>
+                    </cititor>
+                    <data_imprumut>2025-05-01</data_imprumut>
+                    <data_returnare>2025-05-15</data_returnare>
+                    <status>activ</status>
+                </imprumut>
+            </imprumuturi>
+        </carte>
+    </sectiune>
+
+</biblioteca>

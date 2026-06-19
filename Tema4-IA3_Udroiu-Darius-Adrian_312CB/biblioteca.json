@@ -1,0 +1,210 @@
+{
+  "biblioteca": {
+    "_attributes": {
+      "nume": "Biblioteca Centrala Universitara",
+      "oras": "Bucuresti"
+    },
+    "sectiune": [
+      {
+        "_attributes": {
+          "id": "S001",
+          "categorie": "Literatura"
+        },
+        "carte": [
+          {
+            "_attributes": {
+              "id": "C001",
+              "disponibila": "da"
+            },
+            "titlu": "Ion",
+            "autor": {
+              "prenume": "Liviu",
+              "nume": "Rebreanu",
+              "nationalitate": "romana"
+            },
+            "publicatie": {
+              "editura": "Cartea Romaneasca",
+              "an": "1920",
+              "editie": "1"
+            },
+            "detalii": {
+              "gen": "Roman",
+              "pagini": "412",
+              "limba": "romana",
+              "isbn": "978-973-23-1234-5"
+            },
+            "imprumuturi": {
+              "imprumut": [
+                {
+                  "_attributes": { "id": "IMP001" },
+                  "cititor": {
+                    "prenume": "Ana",
+                    "nume": "Popescu",
+                    "email": "ana.popescu@email.ro"
+                  },
+                  "data_imprumut": "2025-03-01",
+                  "data_returnare": "2025-03-15",
+                  "status": "returnat"
+                }
+              ]
+            }
+          },
+          {
+            "_attributes": {
+              "id": "C002",
+              "disponibila": "nu"
+            },
+            "titlu": "Enigma Otiliei",
+            "autor": {
+              "prenume": "George",
+              "nume": "Calinescu",
+              "nationalitate": "romana"
+            },
+            "publicatie": {
+              "editura": "Minerva",
+              "an": "1938",
+              "editie": "3"
+            },
+            "detalii": {
+              "gen": "Roman",
+              "pagini": "380",
+              "limba": "romana",
+              "isbn": "978-973-21-0567-2"
+            },
+            "imprumuturi": {
+              "imprumut": [
+                {
+                  "_attributes": { "id": "IMP002" },
+                  "cititor": {
+                    "prenume": "Mihai",
+                    "nume": "Ionescu",
+                    "email": "mihai.ionescu@email.ro"
+                  },
+                  "data_imprumut": "2025-04-10",
+                  "data_returnare": "2025-04-24",
+                  "status": "activ"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "_attributes": {
+          "id": "S002",
+          "categorie": "Stiinta"
+        },
+        "carte": [
+          {
+            "_attributes": {
+              "id": "C003",
+              "disponibila": "da"
+            },
+            "titlu": "O scurta istorie a timpului",
+            "autor": {
+              "prenume": "Stephen",
+              "nume": "Hawking",
+              "nationalitate": "britanica"
+            },
+            "publicatie": {
+              "editura": "Humanitas",
+              "an": "1988",
+              "editie": "2"
+            },
+            "detalii": {
+              "gen": "Stiinta populara",
+              "pagini": "212",
+              "limba": "romana",
+              "isbn": "978-973-50-2341-8"
+            },
+            "imprumuturi": {}
+          },
+          {
+            "_attributes": {
+              "id": "C004",
+              "disponibila": "da"
+            },
+            "titlu": "Structura revolutiilor stiintifice",
+            "autor": {
+              "prenume": "Thomas",
+              "nume": "Kuhn",
+              "nationalitate": "americana"
+            },
+            "publicatie": {
+              "editura": "Humanitas",
+              "an": "1962",
+              "editie": "4"
+            },
+            "detalii": {
+              "gen": "Filosofia stiintei",
+              "pagini": "298",
+              "limba": "romana",
+              "isbn": "978-973-50-0892-3"
+            },
+            "imprumuturi": {
+              "imprumut": [
+                {
+                  "_attributes": { "id": "IMP003" },
+                  "cititor": {
+                    "prenume": "Elena",
+                    "nume": "Dumitrescu",
+                    "email": "elena.d@email.ro"
+                  },
+                  "data_imprumut": "2025-04-20",
+                  "data_returnare": "2025-05-04",
+                  "status": "returnat"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "_attributes": {
+          "id": "S003",
+          "categorie": "Informatica"
+        },
+        "carte": [
+          {
+            "_attributes": {
+              "id": "C005",
+              "disponibila": "nu"
+            },
+            "titlu": "Introduction to Algorithms",
+            "autor": {
+              "prenume": "Thomas",
+              "nume": "Cormen",
+              "nationalitate": "americana"
+            },
+            "publicatie": {
+              "editura": "MIT Press",
+              "an": "2009",
+              "editie": "3"
+            },
+            "detalii": {
+              "gen": "Manual universitar",
+              "pagini": "1292",
+              "limba": "engleza",
+              "isbn": "978-0-262-03384-8"
+            },
+            "imprumuturi": {
+              "imprumut": [
+                {
+                  "_attributes": { "id": "IMP004" },
+                  "cititor": {
+                    "prenume": "Darius",
+                    "nume": "Udroiu",
+                    "email": "darius.udroiu@stud.acs.ro"
+                  },
+                  "data_imprumut": "2025-05-01",
+                  "data_returnare": "2025-05-15",
+                  "status": "activ"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

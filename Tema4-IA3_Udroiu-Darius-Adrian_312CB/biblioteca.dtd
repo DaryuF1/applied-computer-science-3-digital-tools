@@ -1,0 +1,49 @@
+<!-- DTD pentru sistemul de biblioteca -->
+
+<!ELEMENT biblioteca (sectiune+)>
+<!ATTLIST biblioteca
+    nume    CDATA #REQUIRED
+    oras    CDATA #REQUIRED>
+
+<!ELEMENT sectiune (carte+)>
+<!ATTLIST sectiune
+    id          ID      #REQUIRED
+    categorie   CDATA   #REQUIRED>
+
+<!ELEMENT carte (titlu, autor, publicatie, detalii, imprumuturi)>
+<!ATTLIST carte
+    id          ID      #REQUIRED
+    disponibila (da|nu) #REQUIRED>
+
+<!-- Informatii carte -->
+<!ELEMENT titlu (#PCDATA)>
+
+<!ELEMENT autor (prenume, nume, nationalitate)>
+<!ELEMENT prenume (#PCDATA)>
+<!ELEMENT nume (#PCDATA)>
+<!ELEMENT nationalitate (#PCDATA)>
+
+<!ELEMENT publicatie (editura, an, editie)>
+<!ELEMENT editura (#PCDATA)>
+<!ELEMENT an (#PCDATA)>
+<!ELEMENT editie (#PCDATA)>
+
+<!ELEMENT detalii (gen, pagini, limba, isbn)>
+<!ELEMENT gen (#PCDATA)>
+<!ELEMENT pagini (#PCDATA)>
+<!ELEMENT limba (#PCDATA)>
+<!ELEMENT isbn (#PCDATA)>
+
+<!-- Imprumuturi -->
+<!ELEMENT imprumuturi (imprumut*)>
+
+<!ELEMENT imprumut (cititor, data_imprumut, data_returnare, status)>
+<!ATTLIST imprumut
+    id  ID  #REQUIRED>
+
+<!ELEMENT cititor (prenume, nume, email)>
+<!ELEMENT email (#PCDATA)>
+
+<!ELEMENT data_imprumut (#PCDATA)>
+<!ELEMENT data_returnare (#PCDATA)>
+<!ELEMENT status (#PCDATA)>
